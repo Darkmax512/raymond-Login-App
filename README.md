@@ -30,12 +30,13 @@ cd client/src/helpers/
 in axiosInstance.js please change baseURL = http://localhost:5000/api/v1/
 
 ```
+
 $ cd client && npm start
 $ cd server && npm run dev or npm start
 
+```
 else if you running it for production do this iin the main folder.
 
-```
 ```
 
 $ npm run build
