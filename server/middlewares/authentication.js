@@ -18,7 +18,6 @@ const auth = async (req, res, next) => {
       return res.status(200).json(result);
     }
     payload.user = user;
-    req.roles = user.roles;
     req.payload = payload;
     next();
   } catch (error) {
