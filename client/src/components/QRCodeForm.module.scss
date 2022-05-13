@@ -1,0 +1,59 @@
+.form {
+  width: 50%;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  place-self: center;
+  @media (max-width: 1000px) {
+    width: 70%;
+  }
+  @media (max-width: 850px) {
+    width: 80%;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+  } 
+  & .list {
+    list-style: decimal;
+    margin-left: 5rem;
+    padding: 2rem 0;
+    & li {
+      list-style: decimal;
+    }
+  }
+  & .qrHolder {
+    width: 15rem;
+    height: 15rem;
+    // background-color: red;
+    margin: 0 auto 2rem;
+    border-radius: 1rem;
+    border: 4px solid #389820;
+    position: relative;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 110%;
+      height: 60%;
+      background-color: #fff;
+      top: 50%;
+      left: -5%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      transform: translateY(-50%) rotate(90deg);
+    }
+    & img {
+      position: absolute;
+      z-index: 2;
+      width: 95%;
+      height: 95%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  & .finish {
+    text-align: center;
+  }
+}

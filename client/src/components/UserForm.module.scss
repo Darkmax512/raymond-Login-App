@@ -1,0 +1,32 @@
+.user {
+  width: 50%;
+  max-width: 70rem;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  place-self: center;
+  @media (max-width: 1000px) {
+    width: 70%;
+  }
+  @media (max-width: 850px) {
+    width: 80%;
+  }
+  @media (max-width: 500px) {
+    width: 95%;
+  }
+  & h2 {
+    text-align: center;
+  }
+  & .logout {
+    width: 10rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    background-color: #f03e1e;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+  }
+}

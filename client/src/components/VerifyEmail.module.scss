@@ -1,0 +1,31 @@
+.verifyEmail {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  width: 50rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.308);
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  animation: slide 0.5s ease-in-out forwards;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    top: 10%;
+  }
+  100% {
+    opacity: 1;
+    top: 40%;
+  }
+}
